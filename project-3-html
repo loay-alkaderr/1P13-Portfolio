@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ewb Humanitarian Aid Project</title>
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/loay.jpg"
+              alt="#"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Luay Alkader</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/png/turbines.avif"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Project 1: EWD Humanitarian Aid Mission</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="./assets/png/Wind-Turbines_529618147-scaled.jpg"
+              alt="Project Image"
+              class="project-details__showcase-img"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Project Overview: </h3>
+              <p class="project-details__desc-para"> In response to the specified scenario, a team of dedicated volunteers from Engineers Without Borders is undertaking a mission to construct and conceptualize straightforward, off-grid wind turbine units for the community of Santa Cruz La Laguna in Guatemala. The primary objective is to develop a reliable source of electricity capable of powering essential devices, such as LED lights, while maintaining the efficiency required to energize all units within the village. The defined problem statement outlines the need for an efficient wind turbine design, emphasizing simplicity.
+              </p>
+              <p class="project-details__desc-para"> The project aims to produce both two-foot and three-foot tall turbine models, each with a deflection value of less than 10mm. This stringent requirement is driven by the project's commitment to minimizing maintenance efforts for the wind turbine units. The unique aspect of this initiative lies in the community's active involvement, as the villagers themselves will be responsible for assembling the units.</p>
+            </div>
+            <div class="project-details__content-main">
+                <div class="project-details__desc">
+                    <h3 class="project-details__content-title">Project contribution: </h3>
+                  <p class="project-details__desc-para"> Time Line: Sept, 21st - Nov, 1st 2023
+                    <p class="project-details__desc-para"> As the Manager of this project, I played a vital role in tackling the unique challenges faced by a less developed village with restricted access. Utilizing my expertise, I focused on enhancing the efficiency of the turbine blade through Computer-Aided Design (CAD) with my group members. Employing the skills in AutoCAD, I and my team meticulously designed a turbine that prioritized simplicity, durability, and the incorporation of locally-sourced materials.
+            
+                    <p>
+                      <br>
+                    <p class="project-details__desc-para">
+                        One of my key responsibilities was to choose the optimal material for the turbine blade, taking into consideration factors such as availability, cost-effectiveness, and durability. This necessitated a thorough analysis of locally-sourced materials to ensure not only straightforward production but also easy maintenance, aligning with our commitment to sustainability.
+                    </p>
+                  </div>
+                  <div class="project-details__content-main">
+                    <div class="project-details__desc">
+                      <h3 class="project-details__content-title">Project Reflection: </h3>
+                      <p class="project-details__desc-para"> Throughout this project, positive results were dependent on efficient timetable management and, most importantly, excellent communication. I thought to myself, "How can I organize the project's timeline to achieve optimal efficiency?" This investigation led to a better understanding of time management tactics. Organized group meetings emerged as a critical approach for increasing productivity and ensuring deadline compliance.
+                </div>
+            </div>
+            </div>
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">Project Files, More Details</h3>
+              <a
+                href="./assets/File/Thurs14_P1_Milestones.pdf"
+                class="btn btn--med btn--theme project-details__links-btn"
+                >Milestones</a
+              >
+              <a
+                href="./assets/File/Thurs14_P1_DesignReport (1).pdf"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                >Final Report</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Luay Alkader</h4>
+            <p class="main-footer__short-desc">
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          &copy; Copyright 2023. Designed by Luay Alkader
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
