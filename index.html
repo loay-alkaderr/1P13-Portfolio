@@ -1,262 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Luay's Site</title>
-  <meta name="description" content="Loay's website" />
-  <link rel="icon" type="image/x-icon" href="assets/png/favicon_io/favicon.ico">
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Luay Alkader's Landing Page">
+  <title>Welcome to Luay's Site</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-    rel="stylesheet" />
-</head>
+    .landing-container {
+      text-align: center;
+    }
 
-<body>
-  <header class="header">
-    <div class="header__content">
-      <div class="header__logo-container">
-        <div class="header__logo-img-cont">
-          <img src="./assets/png/loay.jpg" class="header__logo-img" />
-        </div>
-        <span class="header__logo-sub">Luay Alkader</span>
-      </div>
-      <div class="header__main">
-        <ul class="header__links">
-          <li class="header__link-wrapper">
-            <a href="./index.html" class="header__link"> Home </a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="./index.html#projects" class="header__link">
-              Projects
-            </a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="./index.html#contact" class="header__link"> Contact </a>
-          </li>
-        </ul>
-        <div class="header__main-ham-menu-cont">
-          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
-          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
-            class="header__main-ham-menu-close d-none" />
-        </div>
-      </div>
-    </div>
-    <div class="header__sm-menu">
-      <div class="header__sm-menu-content">
-        <ul class="header__sm-menu-links">
-          <li class="header__sm-menu-link">
-            <a href="./index.html"> Home </a>
-          </li>
+    .landing-container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
 
-          <li class="header__sm-menu-link">
-            <a href="./index.html#projects"> Projects </a>
-          </li>
+    .landing-container .option-btn {
+      display: block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
 
-          <li class="header__sm-menu-link">
-            <a href="./index.html#contact"> Contact </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <section class="home-hero">
-    <div class="home-hero__content">
-      <h1 class="heading-primary">Hey, My name is <br>
-      Luay Alkader</h1>
-      <div class="home-hero__info">
-        <p class="text-primary">
-        Currently Studying Engineering at McMaster University, Fueled by passion and a drive to make a positive impact. <br> Welcome to my Portfolio!&#128075;    </p>
-      </div>
-    
-    </div>
-    <div class="home-hero__socials">
-      <div class="home-hero__social">
-        <a href="https://www.linkedin.com/in/luay-alkader-0158b6200/" class="home-hero__social-icon-link">
-          <img src="./assets/png/linkedin-ico.png" alt="icon" class="home-hero__social-icon" />
-        </a>
-      </div>
-      <div class="home-hero__social">
-        <a href="https://www.instagram.com/loay.alkader" class="home-hero__social-icon-link home-hero__social-icon-link--bd-none">
-          <img src="./assets/png/insta-ico.png" alt="icon" class="home-hero__social-icon" />
-        </a>
-      </div>
-        <div class="home-hero__social">
-        <a href="https://www.snapchat.com/add/syria.kingg?invite_id=Ci7EHSmY&locale=en_CA&share_id=LKUkKUuNTJCWDlmR3pe98g&sid=b445dea921764bba8f1f7b61f1c3f8e6" class="home-hero__social-icon-link home-hero__social-icon-link--bd-none">
-          <img src="./assets/png/snapchat-logo-black-and-white-final2.png" alt="icon" class="home-hero__social-icon" />
-        </a>
-      </div>
-    </div>
-    <div class="home-hero__mouse-scroll-cont">
-      <div class="mouse"></div>
-    </div>
-  </section>
-  <section id="projects" class="projects sec-pad">
-    <div class="main-container">
-      <h2 class="heading heading-sec heading-sec__mb-bg">
-        <span class="heading-sec__main">Projects</span>
-        <span class="heading-sec__sub">
-          A display of my work throughout the amazing 1P13 course.
-        </span>
-      </h2>
-
-      <div class="projects__content">
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/png/turbines.avif" alt="Software Screenshot" class="projects__row-img" loading="lazy" />
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title"> Project 1: EWD Humanitarian Aid Mission. </h3>
-            <p class="projects__row-content-desc"> Engineers Without Borders is spearheading a mission to construct off-grid wind turbines for Santa Cruz La Laguna in Guatemala. The goal: reliable electricity for LED lights with minimal maintenance. Villagers will assemble the turbines, emphasizing community involvement. As project manager, I focused on CAD design and material selection for efficient, durable turbines. Timely communication and organized meetings ensured productivity and deadline compliance.
-            </p>
-            <a href="project-1.html" class="btn btn--med btn--theme dynamicBgClr">Details..</a>
-          </div> 
-        </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/png/robot-arm.jpg" class="projects__row-img" loading="lazy" />
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title"> Project 2: Q-Arm w/ Surgical Container. </h3>
-            <p class="projects__row-content-desc"> Project "Get A Grip" focuses on designing a lightweight, medical-grade container and developing robust computer code for efficient transfer. Through CAD design and material selection, we prioritize simplicity, durability, and sustainability. Effective task management and collaboration streamline processes, ensuring safety and functionality.
-            </p>
-            <a href="project-2.html" class="btn btn--med btn--theme dynamicBgClr">Details..</a>
-        </div>
-        </div>
-       <!-- New Project 3 block -->
-<div class="projects__row">
-  <div class="projects__row-img-cont">
-    <img src="assets/png/how-dpf-recycling-fits-with-zero-waste-programs.jpg" alt="Project 3 Screenshot" class="projects__row-img" loading="lazy" />
-  </div>
-  <div class="projects__row-content">
-    <h3 class="projects__row-content-title"> Project 3: Revenge of the Recycling System </h3>
-    <p class="projects__row-content-desc">
-      As a team of engineers, we've dedicated extensive effort and applied advanced software coding techniques to develop a new system. This innovation enables a machine to efficiently sort and recycle waste into the correct bins, showcasing our commitment to hard work and technical excellence.
-    </p>
-    <a href="project-3.html" class="btn btn--med btn--theme dynamicBgClr">Details..</a>
-  </div>
-</div>
-        </div>
-        <!-- New Project 4 block -->
-<div class="projects__row">
-  <div class="projects__row-img-cont">
-    <img src="assets/png/images.jpg" alt="Project 4 Screenshot" class="projects__row-img" loading="lazy" />
-  </div>
-  <div class="projects__row-content">
-    <h3 class="projects__row-content-title"> Project 4: Disability Aid with Anti-Rain (Wheel-Chair) </h3>
-    <p class="projects__row-content-desc">
-      As an engineering team, we've developed a project to improve the lives of individuals with disabilities, making daily tasks more accessible and fostering independence.
-    </p>
-<a href="project-4.html" class="btn btn--med btn--theme dynamicBgClr">Details..</a>
-  </div>
-</div>
-      </div>
-    </div>
-  </section>
-    </div>
-  </section>
-  <section id="contact" class="contact sec-pad dynamicBg">
-    <div class="main-container">
-      <h2 class="heading heading-sec heading-sec__mb-med">
-        <span class="heading-sec__main heading-sec__main--lt">Contact</span>
-        <span class="heading-sec__sub heading-sec__sub--lt">
-         Feel free to reach out to me!
-        </span>
-      </h2>
-
-      <div class="contact__form-container">
-  <form action="https://formspree.io/f/mwkddqgq" method="POST">
-    <div class="contact__form-field">
-      <label class="contact__form-label" for="name">Name</label>
-      <input required placeholder="Enter Your Name" type="text" class="contact__form-input" name="name" id="name" />
-    </div>
-    <div class="contact__form-field">
-      <label class="contact__form-label" for="email">Email</label>
-      <input required placeholder="Enter Your Email" type="text" class="contact__form-input" name="email" id="email" />
-    </div>
-    <div class="contact__form-field">
-      <label class="contact__form-label" for="message">Message</label>
-      <textarea required cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message" name="message" id="message"></textarea>
-    </div>
-    <button type="submit" class="btn btn--theme contact__btn">Submit</button>
-  </form>
-</div>
-          </button>
-        </form>
-      </div>
-    </div>
-  </section>
-  <footer class="main-footer">
-    <div class="main-container">
-      <div class="main-footer__upper">
-        <div class="main-footer__row main-footer__row-1">
-          <h2 class="heading heading-sm main-footer__heading-sm">
-            <span>Social</span>
-          </h2>
-          <div class="main-footer__social-cont">
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/luay-alkader-0158b6200/">
-              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/loay.alkaderr/">
-              <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/insta-ico.png" alt="icon" />
-            </a>
-          </div>
-        </div>
-        <div class="main-footer__row main-footer__row-2">
-          <h4 class="heading heading-sm text-lt">Luay Alkader</h4>
-
-        </div>
-      </div>
-
-      <div class="main-footer__lower">
-        &copy; Copyright 2023. Designed by Luay Alkader
-      </div>
-    </div>
-  </footer>
-
-  <script src="./index.js"></script>
-</body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Mode Toggle</title>
-    <style>
-        body {
-            transition: background-color 0.5s;
-        }
-        /* Add styles for dark mode */
-        body.dark-mode {
-            background-color: #333;
-            color: #fff;
-        }
-        /* Style the button */
-        #darkModeToggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            padding: 10px;
-            cursor: pointer;
-        }
-    </style>
+    .landing-container .option-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-    <button id="darkModeToggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-
-    <!-- Your existing HTML content goes here -->
-
-    <script>
-        function toggleDarkMode() {
-            // Toggle the 'dark-mode' class on the body
-            document.body.classList.toggle('dark-mode');
-        }
-    </script>
+  <div class="landing-container">
+    <h1>Welcome to Luay Alkader's Site</h1>
+    <a href="first-year.html" class="option-btn">First Year</a>
+    <a href="second-year.html" class="option-btn">Second Year</a>
+  </div>
 </body>
-</html>
-
 </html>
