@@ -20,13 +20,12 @@
 
     .landing-container {
       text-align: center;
-      opacity: 0; /* Start hidden */
-      animation: fadeInMove 2s ease-out forwards; /* Animation for motion and fade-in */
     }
 
     .landing-container h1 {
       font-size: 2.5rem;
       margin-bottom: 1rem;
+      animation: dropFade 1s ease-out forwards;
     }
 
     .landing-container .option-btn {
@@ -40,6 +39,9 @@
       border-radius: 5px;
       cursor: pointer;
       text-decoration: none;
+      opacity: 0;
+      transform: translateY(-50px); /* Start above */
+      animation: dropFade 1s ease-out forwards;
     }
 
     .landing-container .option-btn:hover {
@@ -55,16 +57,39 @@
       background-color: #084d6b;
     }
 
-    /* Animation for fade-in and move to center */
-    @keyframes fadeInMove {
+    /* Contact button style */
+    .landing-container .option-btn.contact {
+      background-color: #28a745;
+    }
+
+    .landing-container .option-btn.contact:hover {
+      background-color: #1e7e34;
+    }
+
+    /* Animation for drop-in effect */
+    @keyframes dropFade {
       0% {
         opacity: 0;
-        transform: translateY(50px); /* Start 50px below */
+        transform: translateY(-50px); /* Start above */
       }
       100% {
         opacity: 1;
         transform: translateY(0); /* End at original position */
       }
+    }
+
+    /* Add delays to buttons for staggered animation */
+    .option-btn:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+    .option-btn:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+    .option-btn:nth-child(4) {
+      animation-delay: 0.6s;
+    }
+    .option-btn:nth-child(5) {
+      animation-delay: 0.8s;
     }
   </style>
 </head>
@@ -74,6 +99,7 @@
     <a href="first-year.html" class="option-btn">First Year</a>
     <a href="second-year.html" class="option-btn">Second Year</a>
     <a href="https://www.linkedin.com/in/luay-alkader-0158b6200/" target="_blank" class="option-btn linkedin">LinkedIn</a>
+    <a href="first-year.html#contact" class="option-btn contact">Contact Me</a>
   </div>
 </body>
 </html>
