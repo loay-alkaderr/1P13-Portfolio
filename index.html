@@ -24,7 +24,6 @@
       text-align: center;
       margin-top: 50px;
       font-size: 2rem;
-      animation: fadeInSlide 1.5s ease-out;
       color: white;
     }
 
@@ -33,7 +32,7 @@
       font-size: 3rem;
       font-weight: 900;
       color: white;
-      animation: zoomIn 2s ease-in-out;
+      animation: flyIn 2s ease-out forwards, fadeIn 2s ease-in;
     }
 
     .main-header .name {
@@ -50,6 +49,31 @@
       display: inline-block;
       margin-top: 10px;
       animation: jump 1s infinite, wave 1s 5 alternate, vanish 5s ease-in-out forwards;
+    }
+
+    /* Flying animation for Structural Civil Engineering */
+    @keyframes flyIn {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      50% {
+        transform: translateX(10%);
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
     }
 
     /* Emoji animations */
@@ -137,7 +161,7 @@
     <span>Structural Civil Engineering</span>
     <div class="name">Loay Alabed Alkader</div>
     <!-- Waving Emoji -->
-    <div class="emoji">👋</div>
+    <div class="emoji">WELCOME TO MY SITE 👋</div>
   </header>
 
   <!-- Buttons -->
