@@ -13,7 +13,7 @@
     body {
       font-family: 'Source Sans Pro', sans-serif;
       margin: 0;
-      background: url(assets/jpeg/abstract-red-circle-black-background-technology_1142-9839.avif) no-repeat center center fixed;
+      background: url(assets/jpeg/abstract-red-circle-black-background-technology_1142-9839.avif') no-repeat center center fixed;
       background-size: cover;
       color: white;
       font-weight: bold;
@@ -45,34 +45,44 @@
       animation: fadeIn 2s ease-in;
     }
 
-    @keyframes fadeInSlide {
+    .emoji {
+      font-size: 2rem;
+      display: inline-block;
+      margin-top: 20px;
+      animation: jump 1s infinite, wave 1s 5 alternate, vanish 5s ease-in-out forwards;
+    }
+
+    /* Emoji animations */
+    @keyframes jump {
       0% {
-        opacity: 0;
-        transform: translateY(-50px);
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
       }
       100% {
-        opacity: 1;
         transform: translateY(0);
       }
     }
 
-    @keyframes zoomIn {
+    @keyframes wave {
       0% {
-        transform: scale(0.5);
-        opacity: 0;
+        transform: rotate(0);
+      }
+      50% {
+        transform: rotate(20deg);
       }
       100% {
-        transform: scale(1);
-        opacity: 1;
+        transform: rotate(0);
       }
     }
 
-    @keyframes fadeIn {
+    @keyframes vanish {
       0% {
-        opacity: 0;
+        opacity: 1;
       }
       100% {
-        opacity: 1;
+        opacity: 0;
       }
     }
 
@@ -127,6 +137,7 @@
     McMaster University
     <span>Structural Civil Engineering</span>
     <div class="name">Loay Alabed Alkader</div>
+    <div class="emoji">👋</div>
   </header>
 
   <!-- Buttons -->
