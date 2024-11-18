@@ -1,105 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Luay Alkader's Landing Page">
-  <title>Welcome to Luay's Site</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>University Projects</title>
+  <meta name="description" content="Luay Alkader's University Projects" />
+  <link rel="icon" type="image/x-icon" href="assets/png/favicon_io/favicon.ico">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
   <style>
     body {
       font-family: 'Source Sans Pro', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       margin: 0;
       background-color: #f4f4f4;
-      overflow: hidden;
+      color: #333;
+      overflow-x: hidden;
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    body.dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+
+    #darkModeToggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    #darkModeToggle:hover {
+      background-color: #0056b3;
+    }
+
+    .main-header {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 2rem;
+      animation: fadeInSlide 1.5s ease-out;
+      color: #007bff;
+    }
+
+    .main-header span {
+      display: block;
+      font-size: 3rem;
+      font-weight: 900;
+      color: #0056b3;
+      animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes fadeInSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
     }
 
     .landing-container {
       text-align: center;
+      margin-top: 80px;
     }
 
-    .landing-container h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      animation: dropFade 1s ease-out forwards;
-    }
-
-    .landing-container .option-btn {
-      display: block;
-      margin: 10px auto;
-      padding: 10px 20px;
-      font-size: 1.2rem;
+    .option-btn {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 15px 30px;
+      font-size: 1.5rem;
       color: white;
       background-color: #007bff;
       border: none;
-      border-radius: 5px;
+      border-radius: 10px;
       cursor: pointer;
       text-decoration: none;
-      opacity: 0;
-      transform: translateY(-50px); /* Start above */
-      animation: dropFade 1s ease-out forwards;
+      transition: background-color 0.3s, transform 0.3s;
+      animation: fadeInSlide 1.5s ease-out;
     }
 
-    .landing-container .option-btn:hover {
+    .option-btn:hover {
       background-color: #0056b3;
-    }
-
-    /* LinkedIn-specific button style */
-    .landing-container .option-btn.linkedin {
-      background-color: #0e76a8;
-    }
-
-    .landing-container .option-btn.linkedin:hover {
-      background-color: #084d6b;
-    }
-
-    /* Contact button style */
-    .landing-container .option-btn.contact {
-      background-color: #28a745;
-    }
-
-    .landing-container .option-btn.contact:hover {
-      background-color: #1e7e34;
-    }
-
-    /* Animation for drop-in effect */
-    @keyframes dropFade {
-      0% {
-        opacity: 0;
-        transform: translateY(-50px); /* Start above */
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0); /* End at original position */
-      }
-    }
-
-    /* Add delays to buttons for staggered animation */
-    .option-btn:nth-child(2) {
-      animation-delay: 0.2s;
-    }
-    .option-btn:nth-child(3) {
-      animation-delay: 0.4s;
-    }
-    .option-btn:nth-child(4) {
-      animation-delay: 0.6s;
-    }
-    .option-btn:nth-child(5) {
-      animation-delay: 0.8s;
+      transform: scale(1.1);
     }
   </style>
 </head>
+
 <body>
+  <!-- Dark Mode Toggle -->
+  <button id="darkModeToggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    McMaster University
+    <span>Structural Civil Engineering</span>
+  </header>
+
+  <!-- University Projects Button -->
   <div class="landing-container">
-    <h1>Welcome to Luay Alkader's Site</h1>
-    <a href="first-year.html" class="option-btn">First Year</a>
-    <a href="second-year.html" class="option-btn">Second Year</a>
-    <a href="https://www.linkedin.com/in/luay-alkader-0158b6200/" target="_blank" class="option-btn linkedin">LinkedIn</a>
-    <a href="first-year.html#contact" class="option-btn contact">Contact Me</a>
+    <a href="first-year.html" class="option-btn">University Projects</a>
   </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
 </body>
+
 </html>
