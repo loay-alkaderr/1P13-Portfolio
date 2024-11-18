@@ -15,10 +15,13 @@
       height: 100vh;
       margin: 0;
       background-color: #f4f4f4;
+      overflow: hidden;
     }
 
     .landing-container {
       text-align: center;
+      opacity: 0; /* Start hidden */
+      animation: fadeInMove 2s ease-out forwards; /* Animation for motion and fade-in */
     }
 
     .landing-container h1 {
@@ -42,6 +45,27 @@
     .landing-container .option-btn:hover {
       background-color: #0056b3;
     }
+
+    /* LinkedIn-specific button style */
+    .landing-container .option-btn.linkedin {
+      background-color: #0e76a8;
+    }
+
+    .landing-container .option-btn.linkedin:hover {
+      background-color: #084d6b;
+    }
+
+    /* Animation for fade-in and move to center */
+    @keyframes fadeInMove {
+      0% {
+        opacity: 0;
+        transform: translateY(50px); /* Start 50px below */
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0); /* End at original position */
+      }
+    }
   </style>
 </head>
 <body>
@@ -49,6 +73,7 @@
     <h1>Welcome to Luay Alkader's Site</h1>
     <a href="first-year.html" class="option-btn">First Year</a>
     <a href="second-year.html" class="option-btn">Second Year</a>
+    <a href="https://www.linkedin.com/in/luay-alkader-0158b6200/" target="_blank" class="option-btn linkedin">LinkedIn</a>
   </div>
 </body>
 </html>
