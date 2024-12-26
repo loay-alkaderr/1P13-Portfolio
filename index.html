@@ -19,18 +19,21 @@
       color: white;
       font-weight: bold;
       overflow-x: hidden;
+      min-height: 100vh; /* Ensure full page height */
+      display: flex;
+      flex-direction: column;
     }
 
     .main-header {
       text-align: center;
       margin-top: 50px;
-      font-size: 2rem;
+      font-size: 4rem; /* Increased size */
       color: white;
     }
 
     .main-header span {
       display: block;
-      font-size: 3rem;
+      font-size: 5rem; /* Increased size */
       font-weight: 900;
       color: white;
       animation: flyIn 2s ease-out forwards, fadeIn 2s ease-in;
@@ -39,7 +42,7 @@
     .main-header .name {
       display: block;
       margin-top: 10px;
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: bold;
       color: white;
       animation: fadeIn 2s ease-in;
@@ -145,11 +148,14 @@
 
     .footer {
       text-align: center;
-      margin-top: 50px;
+      margin-top: auto; /* Push the footer to the bottom */
       padding: 20px;
       background-color: rgba(0, 0, 0, 0.8);
       color: white;
       font-size: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
   </style>
 </head>
@@ -188,7 +194,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="main-footer__lower">
-      &copy; Copyrights 2023.
+      &copy; Copyrights 2024.
     </div>
   </footer>
 </body>
