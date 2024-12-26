@@ -15,7 +15,7 @@
       font-family: 'Source Sans Pro', sans-serif;
       margin: 0;
       background: url(assets/png/Screenshot%202024-12-26%20120728.png) no-repeat center center fixed;
-      background-size: cover;
+      background-size: cover; /* Ensures the background image covers the full screen */
       color: white;
       font-weight: bold;
       overflow-x: hidden;
@@ -121,13 +121,16 @@
       }
     }
 
+    /* Centering buttons vertically and horizontally */
     .landing-container {
       text-align: center;
-      margin-top: 80px;
       display: flex;
-      justify-content: center;
+      justify-content: center; /* Horizontally center */
+      align-items: center; /* Vertically center */
+      flex-direction: column; /* Stack buttons vertically */
       gap: 20px; /* Adds spacing between buttons */
-      flex-wrap: wrap; /* Allows wrapping for small screens */
+      min-height: 60vh; /* Adjust the minimum height of the container */
+      padding: 20px;
     }
 
     .option-btn {
@@ -158,14 +161,27 @@
 
     .footer {
       text-align: center;
-      margin-top: auto; /* Push the footer to the bottom */
-      padding: 20px;
+      padding: 10px;
       background-color: rgba(0, 0, 0, 0.8);
       color: white;
       font-size: 0.8rem; /* Smaller font size */
-      position: fixed;
+      position: absolute; /* Ensure it is at the very bottom */
       bottom: 0;
       width: 100%;
+    }
+
+    /* Responsive adjustments for mobile */
+    @media (max-width: 768px) {
+      .main-header {
+        font-size: 3rem; /* Smaller font on mobile */
+      }
+      .main-header span {
+        font-size: 4rem; /* Adjusted for mobile */
+      }
+      .option-btn {
+        font-size: 1.3rem; /* Adjust button font size for mobile */
+        padding: 12px 30px; /* Adjust padding */
+      }
     }
   </style>
 </head>
