@@ -15,11 +15,11 @@
       font-family: 'Source Sans Pro', sans-serif;
       margin: 0;
       background: url(assets/png/Screenshot%202024-12-26%20120728.png) no-repeat center center fixed;
-      background-size: cover; /* Ensures the background image covers the full screen */
+      background-size: cover;
       color: white;
       font-weight: bold;
       overflow-x: hidden;
-      min-height: 100vh; /* Ensure full page height */
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
     }
@@ -27,109 +27,35 @@
     .main-header {
       text-align: center;
       margin-top: 50px;
-      font-size: 4rem; /* Default size */
+      font-size: 4rem;
       color: white;
       font-weight: bold;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adding shadow for emphasis */
-      background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
-      padding: 20px; /* Adding padding for better spacing */
-      border-radius: 10px; /* Optional rounded corners */
-      max-width: 90%; /* Limit width */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 90%;
       margin-left: auto;
       margin-right: auto;
     }
 
     .main-header span {
       display: block;
-      font-size: 5rem; /* Default size */
+      font-size: 5rem;
       font-weight: 900;
       color: white;
       animation: flyIn 2s ease-out forwards, fadeIn 2s ease-in;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adding shadow for emphasis */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     }
 
-    .main-header .name {
-      display: block;
-      margin-top: 10px;
-      font-size: 2rem;
-      font-weight: bold;
-      color: white;
-      animation: fadeIn 2s ease-in;
-    }
-
-    .emoji {
-      font-size: 2rem;
-      display: inline-block;
-      margin-top: 10px;
-      animation: jump 1s infinite, wave 1s 5 alternate, vanish 5s ease-in-out forwards;
-    }
-
-    /* Keyframe Animations */
-    @keyframes flyIn {
-      0% {
-        transform: translateX(-100%);
-        opacity: 0;
-      }
-      50% {
-        transform: translateX(10%);
-        opacity: 1;
-      }
-      100% {
-        transform: translateX(0);
-      }
-    }
-
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-
-    @keyframes jump {
-      0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-10px);
-      }
-      100% {
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes wave {
-      0% {
-        transform: rotate(0);
-      }
-      50% {
-        transform: rotate(20deg);
-      }
-      100% {
-        transform: rotate(0);
-      }
-    }
-
-    @keyframes vanish {
-      0% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
-
-    /* Centering buttons vertically and horizontally */
     .landing-container {
       text-align: center;
       display: flex;
-      justify-content: center; /* Horizontally center */
-      align-items: center; /* Vertically center */
-      flex-direction: column; /* Stack buttons vertically */
-      gap: 20px; /* Adds spacing between buttons */
-      min-height: 60vh; /* Adjust the minimum height of the container */
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      min-height: 60vh;
       padding: 20px;
     }
 
@@ -151,36 +77,19 @@
       transform: scale(1.05);
     }
 
-    .linkedin-btn {
-      background-color: rgba(14, 118, 168, 0.8);
-    }
-
-    .linkedin-btn:hover {
-      background-color: rgba(8, 77, 107, 0.8);
-    }
-
-    .footer {
-      text-align: center;
-      padding: 10px;
-      background-color: rgba(0, 0, 0, 0.8);
-      color: white;
-      font-size: 0.8rem; /* Smaller font size */
-      position: absolute; /* Ensure it is at the very bottom */
-      bottom: 0;
-      width: 100%;
-    }
-
     /* Responsive adjustments for mobile */
     @media (max-width: 768px) {
       .main-header {
-        font-size: 3rem; /* Smaller font on mobile */
+        font-size: 3rem;
       }
+
       .main-header span {
-        font-size: 4rem; /* Adjusted for mobile */
+        font-size: 4rem;
       }
+
       .option-btn {
-        font-size: 1.3rem; /* Adjust button font size for mobile */
-        padding: 12px 30px; /* Adjust padding */
+        font-size: 1.3rem;
+        padding: 12px 30px;
       }
     }
   </style>
@@ -191,38 +100,16 @@
   <header class="main-header">
     Your best place resources  
     <span>Understand Your pet better!</span>
-    <div class="name"></div>
-    <!-- Waving Emoji -->
     <div class="emoji">👋</div>
   </header>
-
-  <!-- Google Ads Placeholder -->
-  <div style="text-align: center; margin: 20px 0;">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-1305607811002339"
-         data-ad-slot="1234567890"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
 
   <!-- Buttons -->
   <div class="landing-container">
     <a href="https://www.chewy.com/" class="option-btn">Shop Toys and Food For My Pet</a>
     <a href="https://www.akc.org/expert-advice/advice/how-to-read-dog-body-language/" class="option-btn">Understand My Pet's Signs</a>
-    <a href="https://www.avma.org/resources/pet-owners/petcare/7-things-you-can-do-keep-your-pet-healthy" class="option-btn linkedin-btn">Healthy Advice and Plan</a>
-    <a href="https://www.smalldoorvet.com/learning-center/wellness/best-ways-to-exercise-with-dogs" class="option-btn contact-btn">Best Exercises For My Pet</a>
+    <a href="https://www.avma.org/resources/pet-owners/petcare/7-things-you-can-do-keep-your-pet-healthy" class="option-btn">Healthy Advice and Plan</a>
+    <a href="https://www.smalldoorvet.com/learning-center/wellness/best-ways-to-exercise-with-dogs" class="option-btn">Best Exercises For My Pet</a>
   </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="main-footer__lower">
-      &copy; Copyrights 2024.
-    </div>
-  </footer>
 </body>
 
 </html>
