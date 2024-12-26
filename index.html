@@ -27,13 +27,13 @@
     .main-header {
       text-align: center;
       margin-top: 50px;
-      font-size: 4rem; /* Increased size */
+      font-size: 4rem; /* Default size */
       color: white;
     }
 
     .main-header span {
       display: block;
-      font-size: 5rem; /* Increased size */
+      font-size: 5rem; /* Default size */
       font-weight: 900;
       color: white;
       animation: flyIn 2s ease-out forwards, fadeIn 2s ease-in;
@@ -55,6 +55,7 @@
       animation: jump 1s infinite, wave 1s 5 alternate, vanish 5s ease-in-out forwards;
     }
 
+    /* Keyframe Animations */
     @keyframes flyIn {
       0% {
         transform: translateX(-100%);
@@ -116,8 +117,8 @@
       margin-top: 80px;
       display: flex;
       justify-content: center;
-      gap: 20px; /* Adds spacing between buttons */
-      flex-wrap: wrap; /* Allows wrapping for small screens */
+      gap: 20px;
+      flex-wrap: wrap;
     }
 
     .option-btn {
@@ -156,6 +157,65 @@
       position: fixed;
       bottom: 0;
       width: 100%;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      .main-header {
+        font-size: 3rem;
+      }
+
+      .main-header span {
+        font-size: 4rem;
+      }
+
+      .landing-container {
+        margin-top: 50px;
+        flex-direction: column;
+      }
+
+      .option-btn {
+        padding: 12px 30px;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+
+      .footer {
+        font-size: 0.9rem;
+      }
+
+      /* Adjust background image for smaller screens */
+      body {
+        background-size: cover;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .main-header {
+        font-size: 2.5rem;
+      }
+
+      .main-header span {
+        font-size: 3.5rem;
+      }
+
+      .landing-container {
+        margin-top: 40px;
+      }
+
+      .option-btn {
+        padding: 10px 25px;
+        font-size: 1rem;
+      }
+
+      .footer {
+        font-size: 0.8rem;
+      }
+
+      /* Ensure the background image scales properly */
+      body {
+        background-size: contain;
+      }
     }
   </style>
 </head>
